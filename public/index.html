@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="player"></div>
+    <div id="containerControls">
+      <div id="buttons">
+        <button class="controlButton" id="PlayPause" onclick="videoPlay()">
+          Play
+        </button>
+        <button class="controlButton" id="PlayPause" onclick="videoPause()">
+          Pause
+        </button>
+        <button class="controlButton" id="startButton" onclick="startVideo()">
+          Start
+        </button>
+        <button id="muteButton" class="controlButton" onclick="muteUnmute()">
+          Mute
+        </button>
+      </div>
+      <div id="progressBarContainer" onclick="setProgressBarOnClick(event)">
+        <div id="progressBar"></div>
+      </div>
+    </div>
+    <div>
+      <p id="status">Welcome to the room ,invite your friends..</p>
+    </div>
+
+    <script
+      src="https://cdn.socket.io/4.7.2/socket.io.min.js"
+      integrity="sha384-mZLF4UVrpi/QTWPA7BjNPEnkIfRFn4ZEO3Qt/HFklTJBj/gBOV8G3HcKn4NfQblz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
